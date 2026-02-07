@@ -1,8 +1,9 @@
 # Waveform Collapse Pacman
 
-
 An experiment learning to use the waveform collapse algorithm to generate Pacman level layouts.
 Note: The actual game of pacman is not implemented (yet! Perhaps one day)
+
+<img width="390" height="409" alt="image" src="https://github.com/user-attachments/assets/342a8a7f-95e1-4a82-96fc-753320c40dbf" />
 
 ## Generation Steps:
 - Set the desired height and width and also pick a palette, then click "Generate" to generate the pacman level.
@@ -19,3 +20,5 @@ This is done via a breadth first search on a graph that is built up as the tiles
 - Once the grid's tiles have been completed, the grid needs to be finalised by adding the border to the tiles on the outside of the grid. This is done with a maze-following algorithm that starts in the bottom left corner and walks the perimeter counter-clockwise by keeping the outside of the grid to the right of the direction it walks.
 
 - After the outside border has been added, the sprites for the ghost box are updated to finish the grid.
+
+<img width="826" height="465" alt="image" src="https://github.com/user-attachments/assets/3b82cf97-19a5-4102-82ab-7667a9267fdd" />
