@@ -1,0 +1,2211 @@
+fileFormatVersion: 2
+guid: c30956ef649eccd47b5b9ae70907e6e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7418599467485559131
+    second: Arcade - Pac-Man - Miscellaneous - Maze Parts_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: White-Double_Top_Right_Corner
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b6bede2b0b36dd4081dee6551136fc8
+      internalID: 1024933471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Double_Top_Left_Corner
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55596d7e579efd341b05c2de456eaeae
+      internalID: 1832933493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Double_Right_Edge
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6994fcbc68b64a64ca338be68fcd9aad
+      internalID: -650352260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Double_Left_Edge
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eca4db2211baef46ad8b6d91a224c2e
+      internalID: -1634321736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Double_Bottom_Right_Corner
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8ed0f6bfccd5d4a9048c37eb67b0ca
+      internalID: -406266206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Double_Bottom_Left_Corner
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2287a8d59ed0a4e995dbf8c4460102
+      internalID: -954390774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Bottom_Right_Right_Edge
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62cabc5d7ce41f47b118bb115dff1ff
+      internalID: -300317720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Bottom_Left_Left_Edge
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a753f016220ca41b3ae566747b1487
+      internalID: 276288097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Top_Right_Right_Edge
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60065d2a91e89bd4d8189c9889c1f12e
+      internalID: 1517568694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Top_Left_Left_Edge
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f540787bc044a0e449b471df7d51ee78
+      internalID: -783162292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Double_Top_Edge
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bef667ed8dc68408864379a529ea37
+      internalID: -892955173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Double_Bottom_Edge
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8ca6523dcf4fc45a52116f47dfad7c
+      internalID: 2096803373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Bottom_Edge
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 186
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae76c7b029490dd42a4df473610c62bc
+      internalID: 481804796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pac-Man - Miscellaneous - Maze Parts_312
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97fee49b2cc31640819d399095f4661
+      internalID: 796740146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pac-Man - Miscellaneous - Maze Parts_313
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c25b1fbfabc2604eac61329902ab250
+      internalID: 1624773082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pac-Man - Miscellaneous - Maze Parts_314
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a502cb2cdee7e974e89e6049d5373b3a
+      internalID: 113802884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pac-Man - Miscellaneous - Maze Parts_315
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be546f3944e5e048a25396f011f3c32
+      internalID: 738546877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Top_Edge
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee1c80a01c98d04ca447d4f87cfa6e3
+      internalID: 2146427273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White_Inner_Top_Right
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f92d3989abd6a94f82f1797f3589d78
+      internalID: -940259152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Inner_Top_Left
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05150ce03d7f164b825b1edf02a95fe
+      internalID: -1967326974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Right_Edge
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7168ae94c39b2940a30080135b757d6
+      internalID: 500654934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Left_Edge
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11988f0dbef902418697d8534c4447f
+      internalID: 1134328239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Inner_Bottom_Right
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da45121d898199d4f887a07e0e93d49b
+      internalID: -412852342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Inner_Bottom_Left
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f00ba832796064eb3424f734ac5be6
+      internalID: 1991622846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Ghost_Top_Right
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57744a46396321948bdad8e2e64eac7b
+      internalID: 745749940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Ghost_Top_Left
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11dcaf81f7df93a45870d8e702d9dc92
+      internalID: -520435821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Ghost_Bottom_Right
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4af27b98467f7e48897920162439e71
+      internalID: 1413899706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Ghost_Bottom_Left
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 177
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8043a9a7ea7c5744fb0580e641f8e977
+      internalID: -307189911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Ghost_Entrance_Right
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2866d2d7c912324582df4a7df04d1b0
+      internalID: -686226299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Ghost_Entrance_Left
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a21ef570b9cdc4baa6be8a32041542
+      internalID: -1036871179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Top_Left
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a740f698b42abdb4ba3145015b824274
+      internalID: -351426045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Top_Right
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7fc06c4c7cc3f448074e9a3f3e536b
+      internalID: -619964897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Bottom_Left
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c244106417ffb469be0aeb4ba02edf
+      internalID: 211084071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Bottom_Right
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca58336cdeceba40bae081a30748e7b
+      internalID: 643058523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pac-Man - Miscellaneous - Maze Parts_359
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40ecab52a072be4d98620a9533f5edc
+      internalID: 325500209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pac-Man - Miscellaneous - Maze Parts_360
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d925ac4a3e25d48b65a930e218dab6
+      internalID: -1635823448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pac-Man - Miscellaneous - Maze Parts_361
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab046185d61bb7a46b3bd9c1b1cd45e8
+      internalID: 817510906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pac-Man - Miscellaneous - Maze Parts_362
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15454681ee3e9ac4e85ee355a6280f7e
+      internalID: 507725807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Top_Left_Top_Edge
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d6f723825f7264a82dba545d3e50b6
+      internalID: 93758589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Top_Right_Top_Edge
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ad47c67025e6641813bf97a428828a
+      internalID: 387154391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: White-Empty
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c7f79fb427afb41afde8a055971a86
+      internalID: -559090746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pac-Man - Miscellaneous - Maze Parts_366
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3a7f7ec435b2249a2f550f74fc6e4d
+      internalID: 227363687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pac-Man - Miscellaneous - Maze Parts_367
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1f2454ee27f514582ff8abf08a8b7e
+      internalID: -940462112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arcade - Pac-Man - Miscellaneous - Maze Parts_368
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 168
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371ba07b04bfa7541990544f95a15a78
+      internalID: 1071805867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0f056aa7e908bf046abb01294cca3c76
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":35.0,"y":25.0},"gridSpriteSize":{"x":8.0,"y":8.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":1.0,"y":1.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      5: -218654525
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_0: 7418599467485559131
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1: 1687817499
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_10: -2031454126
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_100: 1974265791
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1000: 1545843304
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1001: 1229859088
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1002: 1289494124
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1003: 394448316
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1004: -1524371565
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1005: -1106201103
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1006: -1435960831
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1007: 1692951228
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1008: -600376823
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1009: -950399041
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_101: -589660855
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1010: 1668207369
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1011: 253127963
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1012: -111557172
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1013: 1957522093
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1014: -1677914103
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1015: 890430839
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1016: 1171254640
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1017: 897263230
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1018: 2107859442
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1019: -1870429450
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_102: -1005282578
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1020: -1463178055
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1021: -181969248
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1022: -1144490490
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1023: 1653400675
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1024: 639130434
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1025: 1378607210
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1026: 1367914616
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1027: -1624096833
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1028: 1144882019
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1029: -837910177
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_103: -1673832793
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1030: 545302383
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1031: 771503277
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1032: -1558366991
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1033: -1074253401
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1034: 1609168962
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1035: -1961232840
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1036: -880766067
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1037: 1193012493
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1038: -332537826
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1039: -197584195
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_104: 1285919838
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1040: -1197971442
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1041: 1916336611
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1042: 953802314
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1043: -1262225496
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1044: 1217094542
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1045: -548728249
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1046: -2126519866
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1047: -472598226
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1048: -201068840
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1049: 2120186665
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_105: -444334057
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1050: -1255341874
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1051: 767124811
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1052: 49178209
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1053: -1043602567
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1054: -1004242396
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1055: -1653167283
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1056: 20870234
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1057: -375201417
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1058: 1482004982
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1059: 1975756786
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_106: 1173382001
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1060: -355039676
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1061: -1832962710
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1062: -622499388
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1063: 146036385
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1064: 1129584402
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1065: 791740079
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1066: 479708812
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1067: -1195674771
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1068: 1940864590
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1069: -1567451382
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_107: -2132020365
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1070: 503140984
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1071: 1024295479
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1072: -584823135
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1073: -1776459492
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1074: 889655070
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1075: 1630879302
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1076: -652160485
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1077: -443846300
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1078: 975901036
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1079: 1802459969
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_108: 47564709
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1080: -1401628065
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1081: -131079738
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1082: -476012111
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1083: -374078741
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1084: 413298820
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1085: -1575877083
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1086: -1944225257
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1087: 1615557283
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1088: 1417704747
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1089: 105636155
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_109: -1928404342
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1090: -2104926457
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1091: 904277020
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1092: 279592188
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1093: 1759870428
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1094: 1567265406
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1095: 1088054991
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1096: -513027525
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1097: -1884569033
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1098: -1255791998
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1099: -1886115019
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_11: 1198368793
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_110: 868616288
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1100: -636874629
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1101: -28164604
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1102: -2009618328
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1103: -97293415
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1104: -1505438881
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1105: -1476986340
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_1106: -69364855
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_111: 595488045
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_112: -92721100
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_113: 1836742881
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_114: 1750103847
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_115: -375132852
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_116: 1405932362
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_117: 329434682
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_118: -2089986299
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_119: 471951720
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_12: 1515275062
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_120: -1752327848
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_121: 1512954766
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_122: -878546815
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_123: 393161385
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_124: -835669680
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_125: -1417272926
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_126: 1488966527
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_127: -36804508
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_128: 1247245962
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_129: 1550499723
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_13: -165235703
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_130: 1840208607
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_131: -924486854
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_132: -609954423
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_133: 2011801967
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_134: 1207810496
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_135: -802553544
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_136: -645953449
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_137: -1385641036
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_138: -1804325535
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_139: 584838905
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_14: -350968145
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_140: 891177711
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_141: -1881276773
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_142: 1031287562
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_143: 207538946
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_144: -1582739557
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_145: 232613678
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_146: -758334702
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_147: -1986057670
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_148: 943987815
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_149: -570186625
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_15: 926121396
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_150: 1158524535
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_151: 342469413
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_152: 697358205
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_153: -11497566
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_154: -1059384526
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_155: -1146998421
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_156: 2125306928
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_157: 1340691499
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_158: 94457018
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_159: 972736063
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_16: 404412034
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_160: 1363128598
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_161: -403642842
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_162: -64529464
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_163: 1764006049
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_164: 181609448
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_165: 1130431520
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_166: -737819492
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_167: 623293759
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_168: -1292756492
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_169: -226337264
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_17: -552661953
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_170: 1821770926
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_171: 242806233
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_172: 1644380120
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_173: 576264799
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_174: -1803356708
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_175: 265967425
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_176: 576243677
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_177: -139978654
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_178: -766986667
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_179: -1288301603
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_18: -1640453764
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_180: -1040839852
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_181: -767348165
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_182: -1183612709
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_183: 1597426927
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_184: 2134336234
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_185: 1356610799
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_186: -1865413651
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_187: 2137427107
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_188: -20020676
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_189: -1424120145
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_19: -1623406703
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_190: -1136576244
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_191: 690010600
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_192: -347292330
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_193: 1315559025
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_194: -793414420
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_195: 269128490
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_196: -2119969246
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_197: -395575371
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_198: -211241012
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_199: -1038123892
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_2: 746349658
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_20: 1468255333
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_200: 1742002532
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_201: 809447480
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_202: -950788191
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_203: -863027642
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_204: -1687335517
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_205: 1836929024
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_206: -982618647
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_207: 1332058389
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_208: 1424974836
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_209: -167365910
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_21: 2052629133
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_210: -1516041564
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_211: 1242193
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_212: -906350803
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_213: 1361381667
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_214: 163171983
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_215: 1849524682
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_216: 163402390
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_217: 1116530038
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_218: 480161407
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_219: -1571875189
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_22: 681389486
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_220: -2011753375
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_221: -1770675530
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_222: 1326508041
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_223: -477274775
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_224: -111380058
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_225: 497140357
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_226: 1660842762
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_227: -1115285111
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_228: -682608935
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_229: 1859932191
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_23: -1249177463
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_230: 390713194
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_231: 1179632670
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_232: 417086989
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_233: -2137595248
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_234: -1474099873
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_235: -1561095914
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_236: 445430956
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_237: -917770026
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_238: -1420967792
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_239: 1908704657
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_24: -818938746
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_240: 1667771586
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_241: -536328560
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_242: 548855176
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_243: -451443427
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_244: -1758684637
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_245: -867857945
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_246: 1314996960
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_247: 1716289952
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_248: -1944606285
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_249: 1080328919
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_250: -1265563822
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_251: -392949339
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_252: 106362172
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_253: -1283369550
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_254: -26424733
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_255: 1035714472
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_256: -1811615541
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_257: -1815869356
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_258: 93903347
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_259: 1593786867
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_26: -158129427
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_260: -1085940585
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_261: -463843627
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_262: -75935639
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_263: 10531336
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_264: 890591327
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_265: -689797748
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_266: 35791534
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_267: -1970870375
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_268: 441571724
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_269: -136024033
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_27: 566196353
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_270: -1274519406
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_28: -772016358
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_282: 991926710
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_284: -1191797202
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_286: 1086267274
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_287: -1638001943
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_288: -1155772646
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_289: -1226254249
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_29: 1778865062
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_290: 623386031
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_291: 1626289344
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_292: 1372871412
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_293: 324378963
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_294: 176272512
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_295: -2009073149
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_296: -912193510
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_297: 1112182994
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_298: 7201397
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_299: -1689201461
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_3: 1161656834
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_30: 207281221
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_300: -1835545578
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_301: 2143366807
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_302: -1511475065
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_303: -2044988655
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_304: -536459430
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_305: -1028415398
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_306: -1525232166
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_307: -2028338751
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_308: 802632492
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_309: 1181791869
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_31: -880027803
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_310: 482428962
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_311: -619321225
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_312: 796740146
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_313: 1624773082
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_314: 113802884
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_315: 738546877
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_317: -768113289
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_32: -633434417
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_328: 1063499838
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_329: -248251387
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_33: 2074350321
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_330: 1226373044
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_331: 1247353113
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_332: 419135704
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_333: 1978116808
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_334: 785408614
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_335: 592681581
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_336: -520387665
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_337: -1094149484
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_338: -2055045534
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_339: -2104922321
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_34: 640351461
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_340: 1416054379
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_341: -498536406
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_342: 1601783159
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_343: -1896166050
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_344: -385377175
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_345: 91247976
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_346: -1218415771
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_347: -472484578
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_348: -701181496
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_349: -1721810563
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_35: 42571301
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_350: -1977196318
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_351: 40221132
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_352: 1207908832
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_359: 325500209
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_36: 1225829854
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_360: -1635823448
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_361: 817510906
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_362: 507725807
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_366: 227363687
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_367: -940462112
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_368: 1071805867
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_369: -303613387
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_37: 1291300408
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_370: 1864120447
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_371: -459460527
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_372: 624358401
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_373: -375488548
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_374: 11449922
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_375: 1592284884
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_376: 1616051408
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_377: 1554019309
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_378: -333807589
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_379: 1180223036
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_38: -1952580138
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_380: 1533845995
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_381: -1279794424
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_382: 1193039995
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_383: -665006888
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_384: 144878090
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_385: 1622669830
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_386: -580892565
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_387: 515461884
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_388: 458467291
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_389: 317581371
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_39: 216085832
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_390: -22981020
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_391: 1089929843
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_392: 3225750
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_393: -1895630494
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_394: -1573788847
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_395: 619122230
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_396: -1420562062
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_397: -1413833596
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_398: -1747827250
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_399: 786059353
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_4: 301781488
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_40: -1699314752
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_400: -1174212027
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_401: 964331046
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_402: 1258608357
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_403: 1199861551
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_404: 403583824
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_405: 589684365
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_406: -1423676276
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_407: 989181530
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_408: 290057231
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_409: 950720545
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_41: -65165410
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_410: -1267327462
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_411: 1178570630
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_412: -995804446
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_413: -1560039035
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_414: -1029846691
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_415: -127556814
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_416: 796362293
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_417: 553134760
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_418: -1617114283
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_419: -2099508461
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_42: 227827473
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_420: 1231986422
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_421: -1814638300
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_422: -1358301588
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_423: 1008258335
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_424: 1062352581
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_425: -1879403228
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_426: -1384601035
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_427: 8072715
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_428: 1933856907
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_429: 1519103297
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_43: -434142503
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_430: 1545245997
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_431: -1643363652
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_432: -349440911
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_433: -1653232691
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_434: 1332720864
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_435: 1094721295
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_436: -104294005
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_437: -2012715708
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_438: 706082
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_439: -1882655257
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_44: 806309012
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_440: -292274591
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_441: -1618899886
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_442: -772548504
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_443: -476923801
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_444: -1061655522
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_445: -960900891
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_446: -2129152781
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_447: 357161823
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_448: -1968714903
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_449: 1436622064
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_45: -935100636
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_450: -459200262
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_451: -246827103
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_452: -1910917454
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_453: -235307343
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_454: -337568956
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_455: 2027664546
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_456: -2026904159
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_457: 825854797
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_458: 458002144
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_459: -1396593128
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_46: 1442161633
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_460: 1394734230
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_461: -1975032973
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_462: 1222709711
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_463: 331020482
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_464: -515705934
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_465: -890858300
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_466: 1915539039
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_467: 1996261737
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_468: -431946880
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_469: -639074590
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_47: -416753742
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_470: -1927810491
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_471: 603741381
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_472: -1313525994
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_473: -2088915228
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_474: -916788626
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_475: 1743330374
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_476: -617882000
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_477: -1827510841
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_478: 978079273
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_479: 1975392497
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_48: 1274753224
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_480: 96987714
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_481: -1217970579
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_482: -1291573200
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_483: -1129876872
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_484: 1627325779
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_485: 1683384100
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_486: -1874831985
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_487: 1116454773
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_488: 986535187
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_489: -1645715587
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_49: 877470791
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_490: 1339559916
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_491: -1458074341
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_492: -84950277
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_493: 1812941510
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_494: -881937981
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_495: 842325347
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_496: 1147008820
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_497: 430603256
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_498: -1054464740
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_499: 1648710549
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_5: 1808826008
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_50: -1495166347
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_500: 585921640
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_501: 727912538
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_502: 366438648
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_503: -505873236
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_504: -2114910461
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_505: -1784607286
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_506: 1400895912
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_507: 2020750380
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_508: -2092585192
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_509: 1169862096
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_51: 1277198051
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_510: -2030960367
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_511: -1605258321
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_512: 456024410
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_513: -1122937228
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_514: 241511075
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_515: 1673949462
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_516: 2142663136
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_517: 1050478845
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_518: -1854475145
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_519: 1003513273
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_52: 1611244456
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_520: -1530098482
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_521: 1119027297
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_522: -539604289
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_523: -1656025150
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_524: 763522342
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_525: -1360779309
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_526: -1070280383
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_527: -1554812182
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_528: -850943880
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_529: 1233314392
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_53: -967896535
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_530: -6740245
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_531: -946091496
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_532: -1006790192
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_533: 1786769512
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_534: -1593933202
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_535: 1366687506
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_536: -977069261
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_537: -177281346
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_538: -1063398930
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_539: 1304115347
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_54: 1942580028
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_540: -1983661071
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_541: -1470925192
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_542: -1677953303
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_543: 1002364232
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_544: 784965110
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_545: -1125292936
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_546: -106909688
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_547: -263205462
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_548: -692401740
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_549: 185199394
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_55: 278937928
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_550: 321842464
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_551: -745538188
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_552: 1024404581
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_553: 1924710613
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_554: 303403852
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_555: -1553074456
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_556: -892873111
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_557: -1885916159
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_558: 638612209
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_559: 49411148
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_56: -1256905678
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_560: -2067665621
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_561: -1019207341
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_562: -853877859
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_563: 711267854
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_564: 345599836
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_565: -79538911
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_566: -1069211338
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_567: -758822863
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_568: 1218026121
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_569: -1182599199
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_57: -1956706252
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_570: 173012956
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_571: 1324313811
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_572: -1904114997
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_573: 2113340372
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_574: 1859835205
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_575: -770866685
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_576: 457629588
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_577: -758608676
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_578: 1414087448
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_579: 1265309697
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_58: -89637123
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_580: -1872377105
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_581: -1916683336
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_582: 1642281759
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_583: -1542461200
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_584: -142092607
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_585: 104204546
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_586: -1839503100
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_587: 1506144414
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_588: 1812450155
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_589: 1221973161
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_59: -298370886
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_590: 1299272772
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_591: 1667211847
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_592: -1508716623
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_593: 1435989552
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_594: -49037846
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_595: 786320573
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_596: 1156938191
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_597: 1743096735
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_598: 460659183
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_599: 680209625
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_6: 1939701341
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_60: -283913950
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_600: 2126793601
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_601: 114855637
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_602: 554592818
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_603: 1679513210
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_604: 1755315131
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_605: -2144873341
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_606: -173550211
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_607: 336081203
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_608: 562256096
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_609: -1442279213
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_61: -830337565
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_610: -2042534705
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_611: 161409629
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_612: -1379899321
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_613: -1977696979
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_614: 486086989
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_615: -199075198
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_616: -1044206003
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_617: 1869932053
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_618: -121999950
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_619: 558182572
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_62: -1467887845
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_620: -2089689832
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_621: -286857547
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_622: 1792430622
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_623: -2028315585
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_624: 2036151612
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_625: 1401640407
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_626: -428254014
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_627: -989722003
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_628: -494703940
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_629: -1816831593
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_63: 618000257
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_630: 550000614
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_631: 102514767
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_632: 1338283202
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_633: 684912243
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_634: 793611787
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_635: 2032364219
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_636: 1861158731
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_637: 326314139
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_638: 1431374388
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_639: -243115401
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_64: -789364841
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_640: 1418725444
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_641: 1918938948
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_642: 705792827
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_643: 26628451
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_644: 1393552636
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_645: -409292525
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_646: 1085455706
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_647: 63401852
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_648: -1082302426
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_649: 1937654982
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_65: -1606449782
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_650: -868864028
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_651: -1056827796
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_652: -1433687841
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_653: -1219495867
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_654: -2015606124
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_655: 1677334744
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_656: -426145365
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_657: -1689801373
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_658: 1976435126
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_659: -1575211303
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_66: 1879123993
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_660: -1990909291
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_661: 1034623187
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_662: -1250082964
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_663: -1546041264
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_664: 1715178238
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_665: 1352654484
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_666: -576509988
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_667: -147714705
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_668: 325237910
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_669: -383797004
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_67: 445030692
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_670: 628485231
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_671: 1420039086
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_672: -1299010304
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_673: -881009285
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_674: -1582193002
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_675: -12147256
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_676: -62278342
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_677: -13073482
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_678: -1331377433
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_679: 2032604811
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_68: -1007048861
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_680: 1519737047
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_681: -2089853899
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_682: 248432254
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_683: 1225198505
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_684: -1673040531
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_685: -2091086446
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_686: 1546366704
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_687: 942581448
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_688: 1027574469
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_689: 1564932313
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_69: -1252955124
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_690: 608713874
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_691: 1397540862
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_692: 963218649
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_693: 33287718
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_694: -1138993975
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_695: -1889050991
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_696: -391647372
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_697: 417240392
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_698: -86652552
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_699: 1200623087
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_7: 4745746
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_70: 1399783732
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_700: -1283088799
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_701: -951492
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_702: 737202884
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_703: 885669748
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_704: -61478393
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_705: -417071627
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_706: -1044712346
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_707: 1344080513
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_708: 530597178
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_709: 361885967
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_71: 1820145251
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_710: 2082505894
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_711: -1391100342
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_712: -1571144081
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_713: -202210426
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_714: -391731113
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_715: -1402344572
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_716: 1993622917
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_717: 1172201453
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_718: 742817246
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_719: -319981017
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_72: 970514233
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_720: 1231790353
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_721: 654693007
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_722: -2044820090
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_723: 1598950459
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_724: 1437638282
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_725: -123927808
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_726: -1768186673
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_727: 2030431354
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_728: 1008499643
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_729: -356685319
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_73: 747656033
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_730: -450489740
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_731: -832315524
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_732: -2019020605
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_733: -1325972492
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_734: 758937390
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_735: -789244841
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_736: 1149909593
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_737: -1856693484
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_738: -745837224
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_739: -751595568
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_74: 892996801
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_740: -969702226
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_741: -2055861028
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_742: 282661741
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_743: -1147579852
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_744: 128565157
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_745: -889462875
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_746: 968541296
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_747: -1926405982
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_748: -677884898
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_749: -1378703696
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_75: -1800583305
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_750: -1733058534
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_751: 37755908
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_752: -940133129
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_753: -1995222334
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_754: 1751526222
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_755: 1699773898
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_756: 557567102
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_757: -767495951
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_758: -909912321
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_759: 366646078
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_76: 1322805325
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_760: -1473229880
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_761: 519528489
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_762: 1708282447
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_763: -1957934834
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_764: 997190996
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_765: 1027583581
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_766: 281667196
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_767: 77530175
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_768: -1497039132
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_769: -1842178370
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_77: -1725799037
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_770: -727027045
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_771: -1767926138
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_772: 1068556497
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_773: -1543632494
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_774: 265324117
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_775: 2102891329
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_776: 1236155611
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_777: 123787056
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_778: 571155343
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_779: -794985931
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_78: -326244415
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_780: -748261240
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_781: -1646451217
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_782: 2017327861
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_783: 376943117
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_784: -1775023985
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_785: 873547010
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_786: -1659387434
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_787: -1016573506
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_788: 1364909851
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_789: 134303052
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_79: 1427391201
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_790: -1440941369
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_791: -2070939990
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_792: -1787945061
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_793: 820320056
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_794: -607496214
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_795: -1953392582
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_796: 1313253957
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_797: 6738355
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_798: -1545604691
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_799: -1053455619
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_8: -1805328925
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_80: 743438049
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_800: -78697398
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_801: 1544677523
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_802: 535592748
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_803: 878898325
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_804: -222012917
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_805: 82627056
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_806: 85526483
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_807: -1632548416
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_808: 1923880808
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_809: -576985029
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_81: -311647258
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_810: -2109297611
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_811: -634125968
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_812: 1814857816
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_813: -809920133
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_814: 1561090161
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_815: -1874042635
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_816: 347479168
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_817: 2130071365
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_818: -1224770332
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_819: -1056581914
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_82: 345736880
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_820: 1094088929
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_821: 1840257203
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_822: 425777207
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_823: 1697603247
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_824: 1971296186
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_825: 2033520498
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_826: -148098951
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_827: 1115578463
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_828: -690252445
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_829: -2031644598
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_83: 623075135
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_830: -1023776815
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_831: -1936057116
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_832: -42604655
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_833: -1995978674
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_834: -1107298482
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_835: -1705648846
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_836: 1689750493
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_837: -1724217955
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_838: -833707976
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_839: 1469738114
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_84: 2061250784
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_840: 588290977
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_841: 336642784
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_842: 54369722
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_843: 229511783
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_844: -888481591
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_845: -887940193
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_846: 423580714
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_847: -971985565
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_848: 1874261184
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_849: 484639735
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_85: -830834502
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_850: 672090066
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_851: -843655134
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_852: 90061097
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_853: -867447156
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_854: -439843113
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_855: 436562765
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_856: 1863933953
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_857: 24377043
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_858: -1508409392
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_859: -1979430715
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_86: -1929043282
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_860: -1905251603
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_861: -22033079
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_862: -179735262
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_863: 2105801993
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_864: 2020965407
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_865: 1965352516
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_866: 1043663729
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_867: -1387941367
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_868: -495016467
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_869: -1660553298
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_87: -541000248
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_870: 1839678146
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_871: -469362934
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_872: -344489710
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_873: 156655730
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_874: -1717006020
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_875: -849424176
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_876: -2048977172
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_877: 595017684
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_878: 812875490
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_879: -1600229326
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_88: 702369016
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_880: -1945928899
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_881: -2029008226
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_882: 1299604901
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_883: -1556505139
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_884: 1893555042
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_885: -2113762537
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_886: 1210889410
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_887: -1502418952
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_888: 1647235467
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_889: 1942186507
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_89: 1586433074
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_890: 43618602
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_891: 1447185518
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_892: 1182731337
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_893: -478709864
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_894: 376105723
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_895: -1109661318
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_896: 339482004
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_897: 1327462754
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_898: -1179794112
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_899: 1727864551
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_9: -2023939944
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_90: -1921048342
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_900: -415005520
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_901: 2100401048
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_902: -1320036961
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_903: -1861569928
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_904: -6453156
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_905: 1041616614
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_906: 184178702
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_907: -1952890135
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_908: 1940653526
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_909: 756065691
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_91: 1957532692
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_910: -1082499536
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_911: -1396665315
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_912: -2128983249
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_913: -1086252305
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_914: -2134325296
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_915: -1922488365
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_916: 954544196
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_917: -605469660
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_918: 1613006437
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_919: 288833317
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_92: -395726030
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_920: -1621272171
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_921: -1545979638
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_922: -386925644
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_923: 540993948
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_924: -801837379
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_925: -1035729395
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_926: -1892926630
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_927: -1551145629
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_928: 1523568162
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_929: 644784414
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_93: -574944563
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_930: -16909653
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_931: -1503900378
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_932: 353847958
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_933: -912557697
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_934: -720096016
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_935: -1400730663
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_936: -1694333133
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_937: -482062164
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_938: -341290348
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_939: -70683537
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_94: 1501852659
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_940: 65229010
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_941: 1630166419
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_942: -2103489220
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_943: 715024750
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_944: 220447978
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_945: -1174924435
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_946: 206804762
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_947: -1874611316
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_948: -1474269591
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_949: -251664526
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_95: 1515948834
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_950: 483828339
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_951: -127557646
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_952: -1336220955
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_953: 812417686
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_954: -1199004878
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_955: 1746203767
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_956: 2097986347
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_957: 1032333538
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_958: 83570210
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_959: 397033045
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_96: -998423321
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_960: 858732871
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_961: -1580145673
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_962: -235736586
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_963: 1233474734
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_964: -402507743
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_965: 932412631
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_966: -241475510
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_967: 1621098613
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_968: 1466158483
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_969: 1935993836
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_97: 213514981
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_970: -802038512
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_971: 1959587437
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_972: -1574432842
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_973: 100002662
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_974: -203959449
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_975: -1941619688
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_976: -660639552
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_977: -474178149
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_978: -1697392631
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_979: 97606126
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_98: -1196671499
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_980: -1823443
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_981: -535196297
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_982: 704732441
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_983: 531390286
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_984: 583761599
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_985: -1262448096
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_986: -1131312455
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_987: 413013254
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_988: -888148372
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_989: 1543736074
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_99: -132163730
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_990: 777597290
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_991: 495872242
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_992: 349550153
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_993: 1043517260
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_994: 707659225
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_995: -1066687535
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_996: -830334003
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_997: 1670071866
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_998: 230276027
+      Arcade - Pac-Man - Miscellaneous - Maze Parts_999: 123609083
+      PacManSprites_0: 2099516372
+      White-Bottom_Edge: 481804796
+      White-Bottom_Left: 211084071
+      White-Bottom_Left_Left_Edge: 276288097
+      White-Bottom_Right: 643058523
+      White-Bottom_Right_Right_Edge: -300317720
+      White-Double_Bottom_Edge: 2096803373
+      White-Double_Bottom_Left_Corner: -954390774
+      White-Double_Bottom_Right_Corner: -406266206
+      White-Double_Left_Edge: -1634321736
+      White-Double_Right_Edge: -650352260
+      White-Double_Top_Edge: -892955173
+      White-Double_Top_Left_Corner: 1832933493
+      White-Double_Top_Right_Corner: 1024933471
+      White-Empty: -559090746
+      White-Ghost_Bottom_Left: -307189911
+      White-Ghost_Bottom_Right: 1413899706
+      White-Ghost_Entrance_Left: -1036871179
+      White-Ghost_Entrance_Right: -686226299
+      White-Ghost_Top_Left: -520435821
+      White-Ghost_Top_Right: 745749940
+      White-Inner_Bottom_Left: 1991622846
+      White-Inner_Bottom_Right: -412852342
+      White-Inner_Top_Left: -1967326974
+      White-Left_Edge: 1134328239
+      White-Right_Edge: 500654934
+      White-Top_Edge: 2146427273
+      White-Top_Left: -351426045
+      White-Top_Left_Left_Edge: -783162292
+      White-Top_Left_Top_Edge: 93758589
+      White-Top_Right: -619964897
+      White-Top_Right_Right_Edge: 1517568694
+      White-Top_Right_Top_Edge: 387154391
+      White_Inner_Top_Right: -940259152
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

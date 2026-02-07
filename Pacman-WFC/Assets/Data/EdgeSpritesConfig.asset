@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09dab1b0e7deec449b95674da5bbf796, type: 3}
+  m_Name: EdgeSpritesConfig
+  m_EditorClassIdentifier: Assembly-CSharp::EdgeSpritesMapping
+  doubleEdgeUpgradeMappings:
+  - SpriteDirectionPair:
+      Direction: -1
+      Original: 1
+    Upgraded: 13
+  - SpriteDirectionPair:
+      Direction: -1
+      Original: 2
+    Upgraded: 14
+  - SpriteDirectionPair:
+      Direction: 8
+      Original: 3
+    Upgraded: 15
+  - SpriteDirectionPair:
+      Direction: 2
+      Original: 4
+    Upgraded: 16
+  - SpriteDirectionPair:
+      Direction: 4
+      Original: 5
+    Upgraded: 25
+  - SpriteDirectionPair:
+      Direction: 8
+      Original: 5
+    Upgraded: 26
+  - SpriteDirectionPair:
+      Direction: 1
+      Original: 6
+    Upgraded: 23
+  - SpriteDirectionPair:
+      Direction: 8
+      Original: 6
+    Upgraded: 24
+  - SpriteDirectionPair:
+      Direction: 4
+      Original: 7
+    Upgraded: 21
+  - SpriteDirectionPair:
+      Direction: 2
+      Original: 7
+    Upgraded: 22
+  - SpriteDirectionPair:
+      Direction: 1
+      Original: 8
+    Upgraded: 27
+  - SpriteDirectionPair:
+      Direction: 2
+      Original: 8
+    Upgraded: 28
+  - SpriteDirectionPair:
+      Direction: -1
+      Original: 21
+    Upgraded: 18
+  - SpriteDirectionPair:
+      Direction: -1
+      Original: 22
+    Upgraded: 18
+  - SpriteDirectionPair:
+      Direction: -1
+      Original: 23
+    Upgraded: 19
+  - SpriteDirectionPair:
+      Direction: -1
+      Original: 24
+    Upgraded: 19
+  - SpriteDirectionPair:
+      Direction: -1
+      Original: 26
+    Upgraded: 17
+  - SpriteDirectionPair:
+      Direction: -1
+      Original: 25
+    Upgraded: 17
+  - SpriteDirectionPair:
+      Direction: -1
+      Original: 27
+    Upgraded: 20
+  - SpriteDirectionPair:
+      Direction: -1
+      Original: 28
+    Upgraded: 20

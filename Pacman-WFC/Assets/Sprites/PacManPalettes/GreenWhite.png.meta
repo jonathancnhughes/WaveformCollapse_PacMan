@@ -1,0 +1,1030 @@
+fileFormatVersion: 2
+guid: 60ff3bed7e6fcca469b0363693be8ac3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5704912010190779663
+    second: GreenWhite_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GreenWhite_Inner_Top_Left
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 74
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed94c7195f851ec4fabf45cee79cc60b
+      internalID: -1017575770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Bottom_Edge
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 74
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb40ec84e2e470449df593222690d78
+      internalID: 2073395085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Inner_Top_Right
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 74
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b3669d9cc9a8143aa223d934dd3a1f
+      internalID: -365611422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_GhostBox_Top_Left
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 74
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422cf93f2a9d7a440bdb1a75dfa50a70
+      internalID: 1779016971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Double_Bottom_Edge
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 74
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cd2328b68038141a9a050fd19d6874
+      internalID: -533199884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_GhostBox_Top_Right
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 74
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80514671412fa1d4d80434c7673e9469
+      internalID: -2105339589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Right_Edge
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 65
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5a4c617d57aea46a532193c2833474
+      internalID: -1019840479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Left_Edge
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 65
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508e53b53d7a10346a65e885f845bdef
+      internalID: 1430385235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Double_Right_Edge
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 65
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26612de0c4082d040917ebfc4b570543
+      internalID: 776309346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Empty
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 65
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c2de4f7eb58bd4f85806c1995736b8
+      internalID: -1851338678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Double_Left_Edge
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 65
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a8d3d82703d644ea6db98ce880141c
+      internalID: 50599569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Inner_Bottom_Left
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143b3b7a4ef0d9944a38770c3286b95c
+      internalID: 78283742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Top_Edge
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8fe1d858384e440ab88fe2ddc9d948
+      internalID: 1245488818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Inner_Bottom_Right
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693b3fbf0ce1af64ebd1407e4f632d52
+      internalID: -793511956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_GhostBox_Bottom_Left
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a1b7eee2a2dec4b803f3b3a93680e0
+      internalID: -1724541694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Double_Top_Edge
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2970c054d6d4d3042b1e0e96e664a69b
+      internalID: -1045952581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_GhostBox_Bottom_Right
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb9a6096a876c3479140589d807d433
+      internalID: -681648573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Double_Top_Left_Corner
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 47
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d54ed4bc9a2d544dbd0f7d186a0f936
+      internalID: -901073768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Top_Right_Top_Edge
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 47
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7169fc4350ff7d648893789e71590118
+      internalID: -756906287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Top_Left_Top_Edge
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 47
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e6e6b01aee6b14ab5a7266cc4442c2
+      internalID: -1139714992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Double_Top_Right_Corner
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 47
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d70ad157bb3834186bca97f8b2b1cf
+      internalID: 79675475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Ghost_Entrance_Right
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8115acfcc3d7cdd44aa7ed9cf1b9c8ef
+      internalID: -886481585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Ghost_Door
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d8494d3401d4d45a7ae116faa79595
+      internalID: 1430255262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Ghost_Entrance_Left
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276a62c89dcf2d84aa744f819bcdb9a4
+      internalID: 1185167872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Bottom_Left_Left_Edge
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daecbad340fccc5469c83dbd47bfdc46
+      internalID: 1157626887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Bottom_Right_Corner
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b7e346db951ca43bd03bf364197bfc
+      internalID: 1137432009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Bottom_Left_Corner
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da89096fe5445d41ab0ca43681c4db3
+      internalID: 679399596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Bottom_Right_Right_Edge
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 38
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a679efad315b647ac159523a6e63e7
+      internalID: -8229519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Top_Left_Left_Edge
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 29
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c0810148d55064bb4ba075d64f4f0a
+      internalID: 256024349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Top_Right_Corner
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 29
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342dca44dafd2c4449a47ebc3ae8bc31
+      internalID: 1693987325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Top_Left_Corner
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 29
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6241a8a2f01edac47ac32f7479826b98
+      internalID: 988332373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Top_Right_RIght_Edge
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 29
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7911450247e455a4c8314baf33b700c8
+      internalID: 231064544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Double_Bottom_Left_Corner
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 20
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e1c3eb10d28874fafe57a46f52eb25
+      internalID: -373046986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Bottom_Right_Bottom_Edge
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 20
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a18a0aba6d23cf4b97b780cf5f766d2
+      internalID: 2052602719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Bottom_Left_Bottom_Edge
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 20
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e05dcaa5cf322646b4e0b8bbde425b9
+      internalID: 316650906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreenWhite_Double_Bottom_Right_Corner
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 20
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2230a8292fc61a44a4b221c822424a8
+      internalID: -2070515578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: dbfe1f9050b03f045b1e3b88a099360b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":8.0,"y":8.0},"gridSpriteOffset":{"x":1.0,"y":2.0},"gridSpritePadding":{"x":1.0,"y":1.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      GreenWhite_0: -5704912010190779663
+      GreenWhite_100: -236934928
+      GreenWhite_101: 913418766
+      GreenWhite_102: 493218068
+      GreenWhite_103: 1722919709
+      GreenWhite_104: -448778367
+      GreenWhite_105: 1231632407
+      GreenWhite_106: -1242953619
+      GreenWhite_107: -1939616748
+      GreenWhite_12: 1272878886
+      GreenWhite_13: 1912619245
+      GreenWhite_14: 1524242856
+      GreenWhite_15: -247334994
+      GreenWhite_16: -657437756
+      GreenWhite_17: -1040711600
+      GreenWhite_19: 1365604957
+      GreenWhite_24: 455088495
+      GreenWhite_25: -1915238823
+      GreenWhite_26: 1923792068
+      GreenWhite_27: 612913336
+      GreenWhite_28: -1591215740
+      GreenWhite_29: 1741153185
+      GreenWhite_36: -1637964435
+      GreenWhite_37: 1761882326
+      GreenWhite_38: 1423162065
+      GreenWhite_39: 1372795236
+      GreenWhite_40: -1865043054
+      GreenWhite_41: 1552240826
+      GreenWhite_46: 1541178023
+      GreenWhite_47: -1883958195
+      GreenWhite_48: 1863862034
+      GreenWhite_49: -1486047123
+      GreenWhite_50: -1159079794
+      GreenWhite_58: 855517839
+      GreenWhite_59: 349713974
+      GreenWhite_60: 1862932722
+      GreenWhite_61: 332880026
+      GreenWhite_62: 2136105625
+      GreenWhite_63: 403673450
+      GreenWhite_64: 1915144842
+      GreenWhite_65: 1405103189
+      GreenWhite_70: -1443471356
+      GreenWhite_71: 340912783
+      GreenWhite_72: -1307411700
+      GreenWhite_73: 946451777
+      GreenWhite_74: 759133783
+      GreenWhite_75: -1973880418
+      GreenWhite_76: -1813628330
+      GreenWhite_77: 1631923226
+      GreenWhite_82: -1910746561
+      GreenWhite_83: -1202181355
+      GreenWhite_84: 25758345
+      GreenWhite_85: -68720312
+      GreenWhite_86: -356882615
+      GreenWhite_87: 1555318326
+      GreenWhite_88: -48513976
+      GreenWhite_89: -819647271
+      GreenWhite_90: 610164083
+      GreenWhite_91: 544402571
+      GreenWhite_92: -953084980
+      GreenWhite_93: 2010972193
+      GreenWhite_94: -1973875324
+      GreenWhite_95: -315635269
+      GreenWhite_96: 1661861812
+      GreenWhite_97: -1105488795
+      GreenWhite_98: -1246218127
+      GreenWhite_99: -1284339986
+      GreenWhite_Bottom_Edge: 2073395085
+      GreenWhite_Bottom_Left_Bottom_Edge: 316650906
+      GreenWhite_Bottom_Left_Corner: 679399596
+      GreenWhite_Bottom_Left_Left_Edge: 1157626887
+      GreenWhite_Bottom_Right_Bottom_Edge: 2052602719
+      GreenWhite_Bottom_Right_Corner: 1137432009
+      GreenWhite_Bottom_Right_Right_Edge: -8229519
+      GreenWhite_Double_Bottom_Edge: -533199884
+      GreenWhite_Double_Bottom_Left_Corner: -373046986
+      GreenWhite_Double_Bottom_Right_Corner: -2070515578
+      GreenWhite_Double_Left_Edge: 50599569
+      GreenWhite_Double_Right_Edge: 776309346
+      GreenWhite_Double_Top_Edge: -1045952581
+      GreenWhite_Double_Top_Left_Corner: -901073768
+      GreenWhite_Double_Top_Right_Corner: 79675475
+      GreenWhite_Empty: -1851338678
+      GreenWhite_GhostBox_Bottom_Left: -1724541694
+      GreenWhite_GhostBox_Bottom_Right: -681648573
+      GreenWhite_GhostBox_Top_Left: 1779016971
+      GreenWhite_GhostBox_Top_Right: -2105339589
+      GreenWhite_Ghost_Door: 1430255262
+      GreenWhite_Ghost_Entrance_Left: 1185167872
+      GreenWhite_Ghost_Entrance_Right: -886481585
+      GreenWhite_Inner_Bottom_Left: 78283742
+      GreenWhite_Inner_Bottom_Right: -793511956
+      GreenWhite_Inner_Top_Left: -1017575770
+      GreenWhite_Inner_Top_Right: -365611422
+      GreenWhite_Left_Edge: 1430385235
+      GreenWhite_Right_Edge: -1019840479
+      GreenWhite_Top_Edge: 1245488818
+      GreenWhite_Top_Left_Corner: 988332373
+      GreenWhite_Top_Left_Left_Edge: 256024349
+      GreenWhite_Top_Left_Top_Edge: -1139714992
+      GreenWhite_Top_Right_Corner: 1693987325
+      GreenWhite_Top_Right_RIght_Edge: 231064544
+      GreenWhite_Top_Right_Top_Edge: -756906287
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
