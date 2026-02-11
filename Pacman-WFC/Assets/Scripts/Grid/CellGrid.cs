@@ -1,7 +1,5 @@
-using JFlex.Core;
 using JFlex.PacmanWFC.View;
 using System.Collections.Generic;
-using UnityEngine;
 
 namespace JFlex.PacmanWFC.Data
 {
@@ -62,28 +60,27 @@ namespace JFlex.PacmanWFC.Data
             NOTSTARTED,
             RUNNING,
             FINISHED,
-            ERROR
+            ERROR,
+            INVALID
         }
 
-        private T[,] cellArray;
-        private int height;
-        private int width;
+        private readonly T[,] cellArray;
+        private readonly int height;
+        private readonly int width;
 
-        private int genWidth;
-        private int middle;
+        private readonly int genWidth;
+        private readonly int middle;
 
         public int WidthToGenerate => genWidth;
 
         private bool isComplete;
         public bool IsComplete => isComplete;
 
-        private Graph<T> gridGraph;
-
         T graphSearchStartCell;
 
         private TilesConfig tilesConfig;
 
-        private int minimumNonEmptyCount;
+        private readonly int minimumNonEmptyCount;
 
         public int NonEmptyTileCount { get; private set; }
 
@@ -94,11 +91,13 @@ namespace JFlex.PacmanWFC.Data
         private GenerationProgress progress;
         private DelayTimings delayTimings;
 
+        private PacmanGraph pacmanGraph;
+
         public CellGrid(int height, int width, TilesConfig tilesConfig, EdgeSpritesMapping edgeSpritesMapping, UIDelegates.OnStatusUpdateCallback onStatusUpdate)
         {
             this.tilesConfig = tilesConfig;
             this.edgeSpritesMapping = edgeSpritesMapping;
-            this.statusUpdateCallback = onStatusUpdate;
+            statusUpdateCallback = onStatusUpdate;
 
             this.height = height;
             this.width = width;
@@ -138,13 +137,6 @@ namespace JFlex.PacmanWFC.Data
                             directions |= Direction.Right;
                         }
 
-                        var isOpenCell = (x == width - 1);
-
-                        if (isOpenCell)
-                        {
-                            Debug.Log($"Is Open Cell {x},{y}");
-                        }
-
                         cell = new CellObj(x, y, tilesConfig.Tiles, directions) as T;
                     }
                     else
@@ -155,8 +147,6 @@ namespace JFlex.PacmanWFC.Data
                     cellArray[y, x] = cell;
                 }
             }
-
-            gridGraph = new Graph<T>();
         }
 
         public IEnumerator<GenerationProgress> GenerateGrid(DelayTimings delayTimings)
@@ -175,13 +165,16 @@ namespace JFlex.PacmanWFC.Data
                 var ghostBoxUpdatedCells = PlaceGhostBoxCells();
                 yield return progress.Set(ghostBoxUpdatedCells, delayTimings.GeneratingDelay);
 
+                // Create Pacman Graph for checking connectivity
+                pacmanGraph = new PacmanGraph(height, genWidth, graphSearchStartCell);
+
                 // wave function collapse
                 var waveFunctionStatus = WAVEFUNCTIONSTATUS.NOTSTARTED;
                 var attempts = 0;
 
                 while (waveFunctionStatus != WAVEFUNCTIONSTATUS.FINISHED && attempts < 20)
                 {
-                    statusUpdateCallback($"RUNNING WAVEFORM COLLAPSE GENERATION");
+                    statusUpdateCallback("RUNNING WAVEFORM COLLAPSE GENERATION");
 
                     List<CellObj> updatedCells = new();
 
@@ -189,6 +182,19 @@ namespace JFlex.PacmanWFC.Data
 
                     if (waveFunctionStatus == WAVEFUNCTIONSTATUS.ERROR)
                     {
+                        yield return progress.Reset(delayTimings.ResetDelay);
+
+                        attempts++;
+                        continue;
+                    }
+
+                    if (waveFunctionStatus == WAVEFUNCTIONSTATUS.INVALID)
+                    {
+                        statusUpdateCallback("Can no longer reach all cells");
+
+                        // return the failing cell so it can be shown before resetting!
+                        yield return progress.Set(updatedCells, delayTimings.ResetDelay);
+
                         yield return progress.Reset(delayTimings.ResetDelay);
 
                         attempts++;
@@ -229,13 +235,21 @@ namespace JFlex.PacmanWFC.Data
                 return WAVEFUNCTIONSTATUS.FINISHED;
             }
 
-            if (!TryCollapseCell(cellToCollapse))
+            if (!TryCollapseCell(cellToCollapse, out var triggerConnectivityCheck))
             {
                 return WAVEFUNCTIONSTATUS.ERROR;
             }
 
             updatedCells.Add(cellToCollapse);
 
+            if (triggerConnectivityCheck)
+            {
+                if (!pacmanGraph.IsStillConnected(cellArray))
+                {
+                    return WAVEFUNCTIONSTATUS.INVALID;
+                }
+            }
+            
             var cellStack = new Stack<CellObj>();
             cellStack.Push(cellToCollapse);
 
@@ -256,37 +270,26 @@ namespace JFlex.PacmanWFC.Data
             return WAVEFUNCTIONSTATUS.RUNNING;
         }
 
-        public bool TryCollapseCell(T cellToCollapse)
+        public bool TryCollapseCell(T cellToCollapse, out bool triggerConnectivityCheck)
         {
-            bool collapsed = cellToCollapse.TryCollapse();
+            triggerConnectivityCheck = false;
 
-            if (collapsed)
+            if (cellToCollapse.TryCollapse(out var lostConnections))
             {
                 if (!cellToCollapse.CollapsedTile.IsEmptyTile)
                 {
                     NonEmptyTileCount++;
                 }
 
-                // add connected neighbours to graph...
-                foreach (Direction dir in DirectionExtensions.AllDirections)
+                if (lostConnections != Direction.None)
                 {
-                    if (dir == Direction.None)
-                    {
-                        continue;
-                    }
-
-                    if (TryGetCellNeighbour(cellToCollapse, dir, out var neighbour) && neighbour.IsCollapsed)
-                    {
-                        if (cellToCollapse.Tiles[0].SharedEdgeWithNeighbour(neighbour.Tiles[0], dir))
-                        {
-                            gridGraph.AddEdge(cellToCollapse, neighbour);
-                            gridGraph.AddEdge(neighbour, cellToCollapse);
-                        }
-                    }
+                    triggerConnectivityCheck = true;
                 }
+
+                return true;
             }
 
-            return collapsed;
+            return false;
         }
 
         public List<CellObj> PlaceGhostBoxCells()
@@ -334,8 +337,6 @@ namespace JFlex.PacmanWFC.Data
 
             // Manually update the non-empty tile count and the gridGraph.
             NonEmptyTileCount += 2;
-            gridGraph.AddEdge(firstCell, secondCell);
-            gridGraph.AddEdge(secondCell, firstCell);
 
             var aboveRow = middle;
             var belowRow = middle;
@@ -417,7 +418,6 @@ namespace JFlex.PacmanWFC.Data
             }
 
             NonEmptyTileCount = 0;
-            gridGraph = new Graph<T>();
         }
 
         public bool TryGetCellNeighbour(T cell, Direction direction, out T neighbour)
@@ -519,16 +519,11 @@ namespace JFlex.PacmanWFC.Data
         public bool TryConstrainNeighbourOfCell(CellObj cell, Direction dir, out T neighbour)
         {
             var neighbourConstrained = false;
-            neighbour = null;
-            if (((dir & cell.ValidDirections) != 0 || cell.ValidDirections == Direction.None) &&
-                TryGetCellNeighbour((T)cell, dir, out neighbour))
+            if (TryGetCellNeighbour((T)cell, dir, out neighbour) && !neighbour.IsCollapsed)
             {
-                if (!neighbour.IsCollapsed)
+                if (neighbour.TryConstrain(cell.Tiles, dir))
                 {
-                    if (neighbour.TryConstrain(cell.Tiles, dir))
-                    {
-                        neighbourConstrained = true;
-                    }
+                    neighbourConstrained = true;
                 }
             }
 
@@ -537,33 +532,36 @@ namespace JFlex.PacmanWFC.Data
 
         public bool IsValidGrid()
         {
-            // Grid is only valid if there is a miniumum of non-empty tiles once generation is complete?
-
-            // Test that there are no disconnected loops/paths by performing a breadth first search
-            // This checks for all tiles that can be visited from the cell immediately above the ghost box.
-            var visited = gridGraph.BreadthFirstSearch(graphSearchStartCell);
-
-            // If the number of visited tiles is equal to the number of non-empty tiles then conclude
-            // that all visitable tiles can be reached.
-            // If not then return false which will trigger a fresh generation.
-            // (Alternative test for this?)
-            return visited.Count == NonEmptyTileCount;
+            return pacmanGraph.IsStillConnected(cellArray);
         }
 
         public IEnumerator<GenerationProgress> CompleteGridStep()
         {
             statusUpdateCallback("Completing Grid");
 
+            var updatePerColumn = (height > 20);
+            
             for (int x = genWidth - 1, z = genWidth; x >= 0; x--, z++)
             {
+                List<CellObj> updatedCells = new();
+
                 for (var y = 0; y < height; y++)
                 {
                     var cellToMirror = GetCell(x, y);
                     var mirroredTile = tilesConfig.GetMirroredTile(cellToMirror.Tiles[0]);
 
                     cellArray[y, z].SetTile(mirroredTile);
+                    updatedCells.Add(cellArray[y, z]);
 
-                    yield return progress.Set(cellArray[y, z], delayTimings.CompletingDelay);
+                    if (!updatePerColumn)
+                    {
+                        yield return progress.Set(cellArray[y, z], delayTimings.CompletingDelay);
+                    }                    
+                }
+
+                if (updatePerColumn)
+                {
+                    yield return progress.Set(updatedCells, delayTimings.CompletingDelay);
                 }
             }
 

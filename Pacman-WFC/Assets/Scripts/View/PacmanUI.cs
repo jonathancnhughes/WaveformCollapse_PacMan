@@ -14,8 +14,8 @@ namespace JFlex.PacmanWFC.View
 
     public class PacmanUI : MonoBehaviour
     {
-        private int height = 8;
-        private int width = 10;
+        private int height = 9;
+        private int width = 12;
 
         [Header("Generation Settings")]
         [SerializeField]

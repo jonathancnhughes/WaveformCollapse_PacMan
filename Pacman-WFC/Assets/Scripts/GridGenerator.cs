@@ -14,7 +14,7 @@ namespace JFlex.PacmanWFC
     }
 
      public class GridGenerator : MonoBehaviour
-    {
+     {
         private enum WAVEFUNCTIONSTATUS
         {
             NOTSTARTED,
@@ -65,7 +65,6 @@ namespace JFlex.PacmanWFC
 
         private GenerationConfig genConfig;
 
-
         private void Awake()
         {
             pacmanUI.CreatePaletteButtons(paletteData, paletteButtonPrefab);
@@ -90,9 +89,9 @@ namespace JFlex.PacmanWFC
 
             genConfig.DelayTimings = cellSize switch
             {
-                <= 120 => timings_Normal,
-                <= 500 => timings_Fast,
-                <= 1000 => timings_Ultra,
+                <= 100 => timings_Normal,
+                <= 200 => timings_Fast,
+                <= 400 => timings_Ultra,
                 _ => timings_NoDelay
             };
             

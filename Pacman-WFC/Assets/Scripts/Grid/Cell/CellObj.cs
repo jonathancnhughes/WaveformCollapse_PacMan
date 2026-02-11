@@ -91,6 +91,30 @@ namespace JFlex.PacmanWFC
             collapsedTile = tiles[idx];
             tiles = new List<TileData>() { collapsedTile };
 
+            validDirections = collapsedTile.Connections;
+
+            isCollapsed = true;
+
+            return true;
+        }
+
+        public bool TryCollapse(out Direction lostConnections)
+        {
+            if (tiles.Count == 0)
+            {
+                Debug.Log("No tiles possible for this cell!");
+                lostConnections = Direction.None;
+                return false;
+            }
+
+            var idx = Random.Range(0, tiles.Count);
+
+            collapsedTile = tiles[idx];
+            tiles = new List<TileData>() { collapsedTile };
+
+            lostConnections = validDirections & ~collapsedTile.Connections;
+
+            validDirections = collapsedTile.Connections;
 
             isCollapsed = true;
 
@@ -134,6 +158,24 @@ namespace JFlex.PacmanWFC
         public override List<TileData> GetTiles()
         {
             return Tiles;
+        }
+
+        public bool IsPotentiallyWalkable()
+        {
+            if (isCollapsed)
+            {
+                return !collapsedTile.IsEmptyTile;
+            }
+
+            for (var i = 0; i < tiles.Count; i++)
+            {
+                if (!tiles[i].IsEmptyTile)
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }
