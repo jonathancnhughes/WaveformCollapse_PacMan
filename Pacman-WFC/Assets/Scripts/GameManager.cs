@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public GameManager Instance;
 
     [SerializeField]
-    private GridBuilder gridBuilder;
+    private GridGenerator gridBuilder;
 
     private void Awake()
     {

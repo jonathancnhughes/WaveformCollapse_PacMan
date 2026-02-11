@@ -1,13 +1,70 @@
 using JFlex.Core;
-using System;
-using System.Collections;
+using JFlex.PacmanWFC.View;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace JFlex.PacmanWFC.Data
 {
+    public enum UPDATE_TYPE
+    {
+        Cell,
+        Cells,
+        Reset,
+        Complete
+    }
+
+    public class GenerationProgress
+    {
+        public UPDATE_TYPE Type;
+        public CellObj UpdatedCell;
+        public List<CellObj> UpdatedCells;
+        public float Delay;
+
+        public GenerationProgress Reset(float delay)
+        {
+            Type = UPDATE_TYPE.Reset;
+            Delay = delay;
+
+            return this;
+        }
+
+        public GenerationProgress Set(UPDATE_TYPE type, float delay)
+        {
+            Type = type;
+            Delay =delay;
+
+            return this;
+        }
+
+        public GenerationProgress Set(CellObj updatedCell, float delay)
+        {
+            Type = UPDATE_TYPE.Cell;
+            UpdatedCell = updatedCell;
+            Delay = delay;
+
+            return this;
+        }
+
+        public GenerationProgress Set(List<CellObj> updatedCells, float delay)
+        {
+            Type = UPDATE_TYPE.Cells;
+            UpdatedCells = updatedCells;
+            Delay = delay;
+
+            return this;
+        }
+    }
+
     public class CellGrid<T> : ICellGrid<T> where T : CellObj
     {
+        private enum WAVEFUNCTIONSTATUS
+        {
+            NOTSTARTED,
+            RUNNING,
+            FINISHED,
+            ERROR
+        }
+
         private T[,] cellArray;
         private int height;
         private int width;
@@ -22,7 +79,7 @@ namespace JFlex.PacmanWFC.Data
 
         private Graph<T> gridGraph;
 
-        T graphSearchStartTile;
+        T graphSearchStartCell;
 
         private TilesConfig tilesConfig;
 
@@ -32,14 +89,16 @@ namespace JFlex.PacmanWFC.Data
 
         private readonly EdgeSpritesMapping edgeSpritesMapping;
 
-        private Action<string> onStatusUpdate;
+        private UIDelegates.OnStatusUpdateCallback statusUpdateCallback;
 
+        private GenerationProgress progress;
+        private DelayTimings delayTimings;
 
-        public CellGrid(int height, int width, TilesConfig tilesConfig, EdgeSpritesMapping edgeSpritesMapping, Action<string> onStatusUpdate)
+        public CellGrid(int height, int width, TilesConfig tilesConfig, EdgeSpritesMapping edgeSpritesMapping, UIDelegates.OnStatusUpdateCallback onStatusUpdate)
         {
             this.tilesConfig = tilesConfig;
             this.edgeSpritesMapping = edgeSpritesMapping;
-            this.onStatusUpdate = onStatusUpdate;
+            this.statusUpdateCallback = onStatusUpdate;
 
             this.height = height;
             this.width = width;
@@ -100,6 +159,103 @@ namespace JFlex.PacmanWFC.Data
             gridGraph = new Graph<T>();
         }
 
+        public IEnumerator<GenerationProgress> GenerateGrid(DelayTimings delayTimings)
+        {
+            progress = new GenerationProgress();
+            this.delayTimings = delayTimings;
+            isComplete = false;
+
+            for (var genAttempts = 0; genAttempts < 20; genAttempts++)
+            {
+                statusUpdateCallback("Placing tunnel and ghost box");
+
+                var tunnelUpdatedCells = PlaceTunnels();
+                yield return progress.Set(tunnelUpdatedCells, delayTimings.GeneratingDelay);
+
+                var ghostBoxUpdatedCells = PlaceGhostBoxCells();
+                yield return progress.Set(ghostBoxUpdatedCells, delayTimings.GeneratingDelay);
+
+                // wave function collapse
+                var waveFunctionStatus = WAVEFUNCTIONSTATUS.NOTSTARTED;
+                var attempts = 0;
+
+                while (waveFunctionStatus != WAVEFUNCTIONSTATUS.FINISHED && attempts < 20)
+                {
+                    statusUpdateCallback($"RUNNING WAVEFORM COLLAPSE GENERATION");
+
+                    List<CellObj> updatedCells = new();
+
+                    waveFunctionStatus = WaveFunctionCollapseStep(updatedCells);
+
+                    if (waveFunctionStatus == WAVEFUNCTIONSTATUS.ERROR)
+                    {
+                        yield return progress.Reset(delayTimings.ResetDelay);
+
+                        attempts++;
+                        continue;
+                    }
+
+                    yield return progress.Set(updatedCells, delayTimings.GeneratingDelay);
+                }
+
+                statusUpdateCallback("Checking grid is valid");
+
+                if (IsValidGrid())
+                {
+                    break;
+                }
+
+                statusUpdateCallback("Restarting");
+                ResetCells();
+
+                yield return progress.Reset(delayTimings.ResetDelay);
+            }
+
+            var completeGridRoutine = CompleteGridStep();
+
+            while (completeGridRoutine.MoveNext())
+            {
+                yield return completeGridRoutine.Current;
+            }
+
+            isComplete = true;
+            yield return progress.Set(UPDATE_TYPE.Complete, delayTimings.GeneratingDelay);
+        }
+
+        private WAVEFUNCTIONSTATUS WaveFunctionCollapseStep(List<CellObj> updatedCells)
+        {
+            if (!TryGetCellWithLowestEntropy(out var cellToCollapse))
+            {
+                return WAVEFUNCTIONSTATUS.FINISHED;
+            }
+
+            if (!TryCollapseCell(cellToCollapse))
+            {
+                return WAVEFUNCTIONSTATUS.ERROR;
+            }
+
+            updatedCells.Add(cellToCollapse);
+
+            var cellStack = new Stack<CellObj>();
+            cellStack.Push(cellToCollapse);
+
+            while (cellStack.Count > 0)
+            {
+                var cell = cellStack.Pop();
+                foreach (Direction dir in DirectionExtensions.AllDirections)
+                {
+                    if (TryConstrainNeighbourOfCell(cell, dir, out var neighbour))
+                    {
+                        cellStack.Push(neighbour);
+
+                        updatedCells.Add(neighbour);
+                    }
+                }
+            }
+
+            return WAVEFUNCTIONSTATUS.RUNNING;
+        }
+
         public bool TryCollapseCell(T cellToCollapse)
         {
             bool collapsed = cellToCollapse.TryCollapse();
@@ -133,36 +289,48 @@ namespace JFlex.PacmanWFC.Data
             return collapsed;
         }
 
-        public void PlaceGhostSpawnCells()
+        public List<CellObj> PlaceGhostBoxCells()
         {
-            // Set the ghost spawn cell (using empty sprites)
+            var updatedCells = new List<CellObj>();
+
             var cell = cellArray[middle, genWidth - 1];
             cell.SetTile(tilesConfig.EmptyTile, doNotMirror: true);
+            updatedCells.Add(cell);
 
             // Then restrict the tiles above, below and to the left of the box
-            if (TryGetCellNeighbour(cell, Direction.Up, out graphSearchStartTile))
+            if (TryGetCellNeighbour(cell, Direction.Up, out graphSearchStartCell))
             {
-                graphSearchStartTile.ResetCell(tilesConfig.AboveBoxTiles);
+                graphSearchStartCell.ResetCell(tilesConfig.AboveBoxTiles);
+                updatedCells.Add(graphSearchStartCell);
             }
 
-            if (TryGetCellNeighbour(cell, Direction.Down, out var belowBoxTile))
+            if (TryGetCellNeighbour(cell, Direction.Down, out var belowBoxCell))
             {
-                belowBoxTile.ResetCell(tilesConfig.BelowBoxTiles);
+                belowBoxCell.ResetCell(tilesConfig.BelowBoxTiles);
+                updatedCells.Add(belowBoxCell);
             }
 
-            if (TryGetCellNeighbour(cell, Direction.Left, out var leftBoxTile))
+            if (TryGetCellNeighbour(cell, Direction.Left, out var leftBoxCell))
             {
-                leftBoxTile.ResetCell(tilesConfig.SideBoxTiles);
+                leftBoxCell.ResetCell(tilesConfig.SideBoxTiles);
+                updatedCells.Add(leftBoxCell);
             }
+
+            return updatedCells;
         }
 
-        public void PlaceTunnels()
+        public List<CellObj> PlaceTunnels()
         {
+            var updatedCells = new List<CellObj>();
+
             var firstCell = cellArray[middle, 0];
             var secondCell = cellArray[middle, 1];
 
             firstCell.SetTile(tilesConfig.TunnelTile, doNotMirror: true);
+            updatedCells.Add(firstCell);
+
             secondCell.SetTile(tilesConfig.TunnelTile, doNotMirror: true);
+            updatedCells.Add(secondCell);
 
             // Manually update the non-empty tile count and the gridGraph.
             NonEmptyTileCount += 2;
@@ -171,6 +339,7 @@ namespace JFlex.PacmanWFC.Data
 
             var aboveRow = middle;
             var belowRow = middle;
+            T neighbourCell;
 
             if (height >= 7)
             {
@@ -178,8 +347,13 @@ namespace JFlex.PacmanWFC.Data
                 // the tunnel
                 for (var x = 0; x <= 1; x++)
                 {
-                    cellArray[middle - 1, x].SetTile(tilesConfig.EmptyTile, doNotMirror: true);
-                    cellArray[middle + 1, x].SetTile(tilesConfig.EmptyTile, doNotMirror: true);
+                    var cell = cellArray[middle - 1, x];
+                    cell.SetTile(tilesConfig.EmptyTile, doNotMirror: true);
+                    updatedCells.Add(cell);
+
+                    cell = cellArray[middle + 1, x];
+                    cell.SetTile(tilesConfig.EmptyTile, doNotMirror: true);
+                    updatedCells.Add(cell);
                 }
 
                 // Adjust the values of the rows above and below that now need constraining
@@ -187,19 +361,37 @@ namespace JFlex.PacmanWFC.Data
                 belowRow--;
 
                 // The tiles to the right of the empty row cells now also need constraining.
-                TryConstrainNeighbourOfCell(cellArray[aboveRow, 1], Direction.Right, out _);
-                TryConstrainNeighbourOfCell(cellArray[belowRow, 1], Direction.Right, out _);
+                if (TryConstrainNeighbourOfCell(cellArray[aboveRow, 1], Direction.Right, out neighbourCell))
+                {
+                    updatedCells.Add(neighbourCell);
+                }
+
+                if (TryConstrainNeighbourOfCell(cellArray[belowRow, 1], Direction.Right, out neighbourCell))
+                {
+                    updatedCells.Add(neighbourCell);
+                }
             }
 
             for (var x = 0; x <= 1; x++)
             {
-                TryConstrainNeighbourOfCell(cellArray[aboveRow, x], Direction.Up, out _);
-                TryConstrainNeighbourOfCell(cellArray[belowRow, x], Direction.Down, out _);
+                if (TryConstrainNeighbourOfCell(cellArray[aboveRow, x], Direction.Up, out neighbourCell))
+                {
+                    updatedCells.Add(neighbourCell);
+                }
+
+                if (TryConstrainNeighbourOfCell(cellArray[belowRow, x], Direction.Down, out neighbourCell))
+                {
+                    updatedCells.Add(neighbourCell);
+                }
             }
 
-            TryConstrainNeighbourOfCell(cellArray[middle, 1], Direction.Right, out _);
-        }
+            if (TryConstrainNeighbourOfCell(cellArray[middle, 1], Direction.Right, out neighbourCell))
+            {
+                updatedCells.Add(neighbourCell);
+            }
 
+            return updatedCells;
+        }
 
         public bool CellAlreadyPlaced(int x, int y)
         {
@@ -224,7 +416,7 @@ namespace JFlex.PacmanWFC.Data
                 }
             }
 
-            NonEmptyTileCount = 1;
+            NonEmptyTileCount = 0;
             gridGraph = new Graph<T>();
         }
 
@@ -277,7 +469,7 @@ namespace JFlex.PacmanWFC.Data
             return false;
         }
 
-        public bool TryGetCellWithLowestEntropy(out CellObj cell)
+        public bool TryGetCellWithLowestEntropy(out T cell)
         {
             var cells = GetLowestEntropy();
 
@@ -288,7 +480,7 @@ namespace JFlex.PacmanWFC.Data
             }
 
             var idx = UnityEngine.Random.Range(0, cells.Count);
-            cell = cells[idx];
+            cell = cells[idx] as T;
 
             return true;
         }
@@ -349,7 +541,7 @@ namespace JFlex.PacmanWFC.Data
 
             // Test that there are no disconnected loops/paths by performing a breadth first search
             // This checks for all tiles that can be visited from the cell immediately above the ghost box.
-            var visited = gridGraph.BreadthFirstSearch(graphSearchStartTile);
+            var visited = gridGraph.BreadthFirstSearch(graphSearchStartCell);
 
             // If the number of visited tiles is equal to the number of non-empty tiles then conclude
             // that all visitable tiles can be reached.
@@ -358,9 +550,9 @@ namespace JFlex.PacmanWFC.Data
             return visited.Count == NonEmptyTileCount;
         }
 
-        public IEnumerator CompleteGrid(float stepPause)
+        public IEnumerator<GenerationProgress> CompleteGridStep()
         {
-            onStatusUpdate?.Invoke("Completing Grid");
+            statusUpdateCallback("Completing Grid");
 
             for (int x = genWidth - 1, z = genWidth; x >= 0; x--, z++)
             {
@@ -371,22 +563,24 @@ namespace JFlex.PacmanWFC.Data
 
                     cellArray[y, z].SetTile(mirroredTile);
 
-                    yield return new WaitForSeconds(stepPause);
+                    yield return progress.Set(cellArray[y, z], delayTimings.CompletingDelay);
                 }
             }
 
-            
+            var addOutsideEdgesRoutine = AddOutsideEdgesToGridStep();
 
-            yield return AddOutsideEdgesToGrid(stepPause);
+            while (addOutsideEdgesRoutine.MoveNext())
+            {
+                yield return addOutsideEdgesRoutine.Current;
+            }
 
-            AddGhostBoxEdges();
-
-            isComplete = true;
+            var ghostBoxCells = AddGhostBoxEdges();
+            yield return progress.Set(ghostBoxCells, delayTimings.GeneratingDelay);
         }
 
-        public IEnumerator AddOutsideEdgesToGrid(float stepPause)
+        public IEnumerator<GenerationProgress> AddOutsideEdgesToGridStep()
         {
-            onStatusUpdate?.Invoke("Adding outside edges and ghost box to grid");
+            statusUpdateCallback("Adding outside edges and ghost box to grid");
 
             T start = default;
             Direction dir = Direction.Right;
@@ -434,6 +628,8 @@ namespace JFlex.PacmanWFC.Data
 
                 current.CollapsedTile.AddDoubleEdges(outsideEdges, edgeSpritesMapping);
 
+                yield return progress.Set(current, delayTimings.CompletingDelay);
+
                 Direction[] checkOrder =
                 {
                     DirectionExtensions.TurnRight(dir),
@@ -455,50 +651,78 @@ namespace JFlex.PacmanWFC.Data
                     }
                 }
 
-                yield return new WaitForSeconds(stepPause);
-
             } while (current != start);
         }
 
-        private void AddGhostBoxEdges()
+        private bool TryAddDoubleEdgeToCell(int x, int y, SPRITEPART_SECTION spritePartSection, out T cell)
         {
-            // ghostbox entrance left
-            var cell = cellArray[middle + 1, genWidth - 1];
-            cell.CollapsedTile.AddDoubleEdge(SPRITEPART_SECTION.GHOST_LEFT_ENTRANCE);
+            if (0 > y || y > width || 0 > x || x > height)
+            {
+                cell = null;
+                return false;
+            }
 
-            // ghostbox entrance right
-            cell = cellArray[middle + 1, genWidth];
-            cell.CollapsedTile.AddDoubleEdge(SPRITEPART_SECTION.GHOST_RIGHT_ENTRANCE);
+            cell = cellArray[y, x];
+            cell.CollapsedTile.AddDoubleEdge(spritePartSection);
 
-            // ghost box top left
-            cell = cellArray[middle + 1, genWidth - 2];
-            cell.CollapsedTile.AddDoubleEdge(SPRITEPART_SECTION.GHOST_TOP_LEFT);
+            return true;
+        }
 
-            // ghost box top right
-            cell = cellArray[middle + 1, genWidth + 1];
-            cell.CollapsedTile.AddDoubleEdge(SPRITEPART_SECTION.GHOST_TOP_RIGHT);
+        private List<CellObj> AddGhostBoxEdges()
+        {
+            var updatedCells = new List<CellObj>();
 
-            // ghost box left side
-            cell = cellArray[middle, genWidth - 2];
-            cell.CollapsedTile.AddDoubleEdge(SPRITEPART_SECTION.RIGHT_SIDE);
+            if (TryAddDoubleEdgeToCell(genWidth - 1, middle + 1, SPRITEPART_SECTION.GHOST_LEFT_ENTRANCE, out T cell))
+            {
+                updatedCells.Add(cell);
+            }
 
-            // ghost box bottom left
-            cell = cellArray[middle - 1, genWidth - 2];
-            cell.CollapsedTile.AddDoubleEdge(SPRITEPART_SECTION.GHOST_BOTTOM_LEFT);
+            if (TryAddDoubleEdgeToCell(genWidth, middle + 1, SPRITEPART_SECTION.GHOST_RIGHT_ENTRANCE, out cell))
+            {
+                updatedCells.Add(cell);
+            }
 
-            // ghost box bottom right
-            cell = cellArray[middle - 1, genWidth + 1];
-            cell.CollapsedTile.AddDoubleEdge(SPRITEPART_SECTION.GHOST_BOTTOM_RIGHT);
+            if (TryAddDoubleEdgeToCell(genWidth - 2, middle + 1, SPRITEPART_SECTION.GHOST_TOP_LEFT, out cell))
+            {
+                updatedCells.Add(cell);
+            }
 
-            // ghost box right side
-            cell = cellArray[middle, genWidth + 1];
-            cell.CollapsedTile.AddDoubleEdge(SPRITEPART_SECTION.LEFT_SIDE);
+            if (TryAddDoubleEdgeToCell(genWidth + 1, middle + 1, SPRITEPART_SECTION.GHOST_TOP_RIGHT, out cell))
+            {
+                updatedCells.Add(cell);
+            }
 
-            // ghost box bottom side
-            cell = cellArray[middle - 1, genWidth - 1];
-            cell.CollapsedTile.AddDoubleEdge(SPRITEPART_SECTION.TOP_SIDE);
-            cell = cellArray[middle - 1, genWidth];
-            cell.CollapsedTile.AddDoubleEdge(SPRITEPART_SECTION.TOP_SIDE);
+            if (TryAddDoubleEdgeToCell(genWidth - 2, middle, SPRITEPART_SECTION.RIGHT_SIDE, out cell))
+            {
+                updatedCells.Add(cell);
+            }
+
+            if (TryAddDoubleEdgeToCell(genWidth - 2, middle - 1, SPRITEPART_SECTION.GHOST_BOTTOM_LEFT, out cell))
+            {
+                updatedCells.Add(cell);
+            }
+
+            if (TryAddDoubleEdgeToCell(genWidth + 1, middle - 1, SPRITEPART_SECTION.GHOST_BOTTOM_RIGHT, out cell))
+            {
+                updatedCells.Add(cell);
+            }
+
+            if (TryAddDoubleEdgeToCell(genWidth + 1, middle, SPRITEPART_SECTION.LEFT_SIDE, out cell))
+            {
+                updatedCells.Add(cell);
+            }
+
+            if (TryAddDoubleEdgeToCell(genWidth - 1, middle - 1, SPRITEPART_SECTION.TOP_SIDE, out cell))
+            {
+                updatedCells.Add(cell);
+            }
+
+            if (TryAddDoubleEdgeToCell(genWidth, middle - 1, SPRITEPART_SECTION.TOP_SIDE, out cell))
+            {
+                updatedCells.Add(cell);
+            }
+
+            return updatedCells;
         }
 
         private bool IsBoundaryCell(int x, int y)
@@ -518,78 +742,6 @@ namespace JFlex.PacmanWFC.Data
             }
 
             return false;
-        }
-
-        private void AddOutsideEdgesToGrid()
-        {
-            T start = default;
-            Direction dir = Direction.Right;
-
-            for (var y = 0; y < height; y++)
-            {
-                for (var x = 0; x < width; x++)
-                {
-                    if (IsBoundaryCell(x, y))
-                    {
-                        dir = Direction.Right;
-                        start = cellArray[y, x];
-
-                        foreach (var d in DirectionExtensions.AllDirections)
-                        {
-                            var (dx, dy) = DirectionExtensions.LookInDirection(d);
-                            var newX = x + dx;
-                            var newY = y + dy;
-
-                            if (!TryGetCell(newX, newY, out var testCell) || !IsInsideRegion(testCell))
-                            {
-                                dir = DirectionExtensions.TurnLeft(d);
-                                break;
-                            }
-                        }
-
-                        break;
-                    }
-                }
-
-                if (start != default(T))
-                {
-                    // break outer loop!
-                    break;
-                }
-            }
-
-            var current = start;
-
-            do
-            {
-                // look in all directions to see what edges are on the outside
-                // Once we have these, update the cell with double edges.
-                var outsideEdges = GetOutsideEdges(current.X, current.Y);
-
-                current.CollapsedTile.AddDoubleEdges(outsideEdges, edgeSpritesMapping);
-
-                Direction[] checkOrder =
-                {
-                    DirectionExtensions.TurnRight(dir),
-                    dir,
-                    DirectionExtensions.TurnLeft(dir)
-                };
-
-                foreach (var d in checkOrder)
-                {
-                    var (dx, dy) = DirectionExtensions.LookInDirection(d);
-                    var newX = current.X + dx;
-                    var newY = current.Y + dy;
-
-                    if (TryGetCell(newX, newY, out var newCell) && IsInsideRegion(newCell))
-                    {
-                        dir = d;
-                        current = newCell;
-                        break;
-                    }
-                }
-
-            } while (current != start);
         }
 
         private Direction GetOutsideEdges(int x, int y)

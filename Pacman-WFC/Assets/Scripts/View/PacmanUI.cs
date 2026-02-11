@@ -6,7 +6,13 @@ using JFlex.PacmanWFC.Data;
 
 namespace JFlex.PacmanWFC.View
 {
-    public class GenerateUI : MonoBehaviour
+    public class UIDelegates
+    {
+        public delegate void OnStatusUpdateCallback(string status);
+        public delegate void OnGenerationFinishedCallback();
+    }
+
+    public class PacmanUI : MonoBehaviour
     {
         private int height = 8;
         private int width = 10;
@@ -18,12 +24,9 @@ namespace JFlex.PacmanWFC.View
         private TextMeshProUGUI widthValue;
 
         [SerializeField]
-        private Vector2 heightRange = new(7, 16);
+        private Vector2 heightRange = new(7, 50);
         [SerializeField]
-        private Vector2 widthRange = new(8, 14);
-
-        [SerializeField]
-        private TextMeshProUGUI demoValue;
+        private Vector2 widthRange = new(8, 50);
 
         [SerializeField]
         private List<TextMeshProUGUI> allText;
@@ -32,18 +35,14 @@ namespace JFlex.PacmanWFC.View
 
         [Header("Palette Buttons Setup")]
         [SerializeField]
-        private PalettesData palettes;
-        private SpritePartMapping spritePartMapping;
-
-        [SerializeField]
-        private PaletteButton paletteButtonPrefab;
-        [SerializeField]
         private Transform paletteButtonsContainer;
+        private PalettesData palettesData;
 
+        private SpritePartMapping spritePartMapping;
 
         [Header("Generating Caption Setup")]
         [SerializeField]
-        private GameObject inputsContainer;
+        private GameObject[] inputContainers;
         [SerializeField]
         private GameObject generatingCaptionContainer;
         [SerializeField]
@@ -51,18 +50,18 @@ namespace JFlex.PacmanWFC.View
 
         [Header("Grid Builder")]
         [SerializeField]
-        private GridBuilder gridBuilder;
+        private GridGenerator generator;
 
-        private bool demoMode = true;
+        public delegate void OnStartGenerateHandler(
+            GenerationConfig generationConfig,
+            UIDelegates.OnStatusUpdateCallback onStatusUpdateCallback, 
+            UIDelegates.OnGenerationFinishedCallback onGenerationFinishedCallback);
+       
+        public event OnStartGenerateHandler OnStartGenerate = delegate { };
 
         private void Awake()
         {
             UpdateHeightWidthValues();
-
-            CreatePaletteButtons();
-
-            // Set the first palette as the selected palette.
-            SetPalette((TILE_PALETTE)0);
 
             generatingCaptionContainer.SetActive(false);
 
@@ -71,12 +70,14 @@ namespace JFlex.PacmanWFC.View
 #endif
         }
 
-        private void CreatePaletteButtons()
+        public void CreatePaletteButtons(PalettesData palettes, PaletteButton buttonPrefab)
         {
             if (palettes == null)
             {
                 return;
             }
+
+            palettesData = palettes;
 
             foreach (var (key, palette) in palettes.Data)
             {
@@ -85,11 +86,14 @@ namespace JFlex.PacmanWFC.View
                     continue;
                 }
 
-                var pb = Instantiate(paletteButtonPrefab, paletteButtonsContainer);
+                var pb = Instantiate(buttonPrefab, paletteButtonsContainer);
                 pb.Setup(key, palette.GetSpriteForPartType(SPRITEPART_TYPE.TOP_LEFT_CORNER));
 
                 pb.Button.onClick.AddListener(() => SetPalette(key));
             }
+
+            // Set the first palette as the selected palette.
+            SetPalette((TILE_PALETTE)0);
         }
 
         private void UpdateHeightWidthValues()
@@ -124,7 +128,7 @@ namespace JFlex.PacmanWFC.View
 
         public void SetPalette(TILE_PALETTE palette)
         {
-            spritePartMapping = palettes.GetSpritePartMapping(palette);
+            spritePartMapping = palettesData.GetSpritePartMapping(palette);
 
             // update colours!
             foreach (var t in allText)
@@ -133,12 +137,6 @@ namespace JFlex.PacmanWFC.View
                 t.outlineColor = (Color32)spritePartMapping.SecondaryColour;
                 t.ForceMeshUpdate();
             }
-        }
-
-        public void ToggleDemo()
-        {
-            demoMode = !demoMode;
-            demoValue.text = demoMode ? "YES" : "NO";
         }
 
         public void Exit()
@@ -153,13 +151,17 @@ Application.Quit();
         public void GenerateGrid()
         {
             captionLabel.text = "GENERATING";
-            generatingCaptionContainer.SetActive(true);
-            inputsContainer.SetActive(false);
 
+            ToggleInputs(false);
 
-            gridBuilder.BuildGrid(height, width, spritePartMapping, OnStatusUpdate);
+            var genConfig = new GenerationConfig
+            {
+                Height = height,
+                Width = width,
+                SpritePartMapping = spritePartMapping
+            };           
 
-            StartCoroutine(WaitUntilBuildComplete());
+            OnStartGenerate(genConfig, OnStatusUpdate, OnGenerationFinished);
         }
 
         private void OnStatusUpdate(string status)
@@ -167,16 +169,27 @@ Application.Quit();
             captionLabel.text = status.ToUpper();
         }
 
-        private IEnumerator WaitUntilBuildComplete()
+        public void OnGenerationFinished()
         {
-            yield return new WaitUntil(() => !gridBuilder.IsBuilding);
+            StartCoroutine(PauseBeforeEnablingInputs());
+        }
 
+        private IEnumerator PauseBeforeEnablingInputs()
+        {
             captionLabel.text = "DONE!";
 
             yield return new WaitForSeconds(1f);
 
-            generatingCaptionContainer.SetActive(false);
-            inputsContainer.SetActive(true);
+            ToggleInputs(true);
+        }
+
+        private void ToggleInputs(bool toggle)
+        {
+            generatingCaptionContainer.SetActive(!toggle);
+            foreach (var go in inputContainers)
+            {
+                go.SetActive(toggle);
+            }
         }
     }
 }
