@@ -93,6 +93,8 @@ namespace JFlex.PacmanWFC.Data
 
         private PacmanGraph pacmanGraph;
 
+        private readonly T[] lowestEntropyCells;
+
         public CellGrid(int height, int width, TilesConfig tilesConfig, EdgeSpritesMapping edgeSpritesMapping, UIDelegates.OnStatusUpdateCallback onStatusUpdate)
         {
             this.tilesConfig = tilesConfig;
@@ -101,6 +103,8 @@ namespace JFlex.PacmanWFC.Data
 
             this.height = height;
             this.width = width;
+
+            lowestEntropyCells = new T[height *  width];
 
             genWidth = this.width / 2;
             middle = this.height / 2;
@@ -401,7 +405,7 @@ namespace JFlex.PacmanWFC.Data
 
         public T GetCell(int x, int y)
         {
-            return (T)cellArray[y, x];
+            return cellArray[y, x];
         }
 
         public void ResetCells()
@@ -471,23 +475,23 @@ namespace JFlex.PacmanWFC.Data
 
         public bool TryGetCellWithLowestEntropy(out T cell)
         {
-            var cells = GetLowestEntropy();
+            var cellCount = CalculateLowestEntropy();
 
-            if (cells.Count == 0)
+            if (cellCount == 0)
             {
                 cell = null;
                 return false;
             }
 
-            var idx = UnityEngine.Random.Range(0, cells.Count);
-            cell = cells[idx] as T;
+            var idx = UnityEngine.Random.Range(0, cellCount);
+            cell = lowestEntropyCells[idx];
 
             return true;
         }
-
-        public List<CellObj> GetLowestEntropy()
+           
+        public int CalculateLowestEntropy()
         {
-            var lowestEntropyCells = new List<CellObj>();
+            int head = 0;
             var lowestEntropy = tilesConfig.Tiles.Count;
 
             for (var y = 0; y < height; y++)
@@ -502,18 +506,18 @@ namespace JFlex.PacmanWFC.Data
 
                     if (cell.TileCount < lowestEntropy)
                     {
-                        lowestEntropyCells.Clear();
-                        lowestEntropyCells.Add(cell);
+                        head = 0;
+                        lowestEntropyCells[head++] = cell;
                         lowestEntropy = cell.TileCount;
                     }
                     else if (cell.TileCount == lowestEntropy)
                     {
-                        lowestEntropyCells.Add(cell);
+                        lowestEntropyCells[head++] = cell;
                     }
                 }
             }
 
-            return lowestEntropyCells;
+            return head;
         }
 
         public bool TryConstrainNeighbourOfCell(CellObj cell, Direction dir, out T neighbour)

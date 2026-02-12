@@ -1,6 +1,7 @@
 using JFlex.PacmanWFC.Data;
 using JFlex.PacmanWFC.View;
 using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
 
 namespace JFlex.PacmanWFC
@@ -22,6 +23,10 @@ namespace JFlex.PacmanWFC
             FINISHED,
             ERROR
         }
+
+        [Header("Camera")]
+        [SerializeField]
+        private CinemachineBrain cinemachineBrain;
 
         [Header("UI")]
         [SerializeField]
@@ -112,6 +117,10 @@ namespace JFlex.PacmanWFC
                 cellGrid = new CellGrid<CellObj>(height, width, tilesConfig, edgeSpritesMapping, statusUpdateCallback);
 
                 gridView.CreateCells(height, width, spritePartMapping);
+
+                // Once the grid has been instantiated, the camera does not to keep updating its position to save on perf.
+                cinemachineBrain.ManualUpdate();
+
                 gridView.RefreshAll(cellGrid);
 
                 var generateRoutine = cellGrid.GenerateGrid(genConfig.DelayTimings);

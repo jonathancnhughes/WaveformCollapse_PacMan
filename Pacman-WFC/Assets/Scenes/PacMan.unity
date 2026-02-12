@@ -1185,7 +1185,7 @@ MonoBehaviour:
   IgnoreTimeScale: 0
   WorldUpOverride: {fileID: 0}
   ChannelMask: -1
-  UpdateMethod: 2
+  UpdateMethod: 3
   BlendUpdateMethod: 1
   LensModeOverride:
     Enabled: 0
@@ -2440,6 +2440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aa6acfd4b22d424dbdec22b6e4e515b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JFlex.PacmanWFC.GridGenerator
+  cinemachineBrain: {fileID: 519420033}
   pacmanUI: {fileID: 135207730}
   paletteButtonPrefab: {fileID: 2015395432457660604, guid: cb384cd969f7c0d45b01c62e8929238d, type: 3}
   gridView: {fileID: 1243052756}
